@@ -10,8 +10,43 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="io.app.anolive.anonlive.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/wrapperEmail"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fidel Villanueva Delgado" />
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/editTxtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su Email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/wrapperPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp">
+
+        <EditText
+            android:id="@+id/editTxtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Ingrese su Contraseña" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="Ingresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIngresar"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
